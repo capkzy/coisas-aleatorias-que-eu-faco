@@ -150,11 +150,7 @@ public class cap extends JavaPlugin implements Listener{
                             if(!player.isOnline())return;
                          for (int i = 0; i < 30; i++){
                             player.getWorld().setTime(6000);
-                            try {
-                                Thread.sleep(300);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
+                            runTaskLater(plugin, 10);
                             player.getWorld().setTime(18000);
                                 }
                             }
